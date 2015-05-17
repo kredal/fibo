@@ -10,7 +10,7 @@
 #define DEBOUNCE_DELAY 10
 #define MAX_BUTTONS_INPUT 20
 #define MAX_MODES 3
-#define MAX_PALETTES 4
+#define MAX_PALETTES 5
 #define CLOCK_PIXELS 5
 
 // Parameter 1 = number of pixels in strip
@@ -27,27 +27,33 @@ uint32_t colors[MAX_PALETTES][4] =
   {
     {
       strip.Color(255,255,255),    // off
-      strip.Color(255,10,10),  // hours
-      strip.Color(10,255,10),  // minutes
-      strip.Color(10,10,255) // both;
+      strip.Color(255,10,10),  // hours  red
+      strip.Color(10,255,10),  // minutes  green
+      strip.Color(10,10,255) // both;  blue
     }, 
     {
       strip.Color(255,255,255),    // off
-      strip.Color(255,10,10),  // hours
-      strip.Color(248,202,0),  // minutes
-      strip.Color(10,10,255) // both;
+      strip.Color(255,10,10),  // hours  red
+      strip.Color(248,202,0),  // minutes  yellow
+      strip.Color(10,10,255) // both;  blue
     }, 
     {
       strip.Color(255,255,255),    // off
-      strip.Color(228,101,43),  // hours
-      strip.Color(158,168,38),  // minutes
-      strip.Color(28,224,208) // both;
+      strip.Color(228,101,43),  // hours  orange
+      strip.Color(158,168,38),  // minutes  greenish
+      strip.Color(28,224,208) // both;  cyan
     },
     {
       strip.Color(255,255,255),    // off
-      strip.Color(203,36,2),  // hours
-      strip.Color(184,220,60),  // minutes
-      strip.Color(53,35,93) // both;
+      strip.Color(203,36,2),  // hours  red
+      strip.Color(184,220,60),  // minutes  lime
+      strip.Color(53,35,93) // both;  purple (dark)
+    },
+    {
+      strip.Color(255,255,255),    // off
+      strip.Color(0,255,255),  // hours  blue
+      strip.Color(255,0,0),  // minutes  red
+      strip.Color(127,0,255) // both;  purple 
     }
   }; 
   
